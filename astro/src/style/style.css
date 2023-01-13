@@ -5,12 +5,14 @@
 
 :root{
     --app-col: #000509;
+    --app-second-col:#00E474;
 }
 
 /*navbar bg*/
 
 .bg-nav{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 5, 9, 0.4);
+    backdrop-filter: blur(5px);
 }
 
 
@@ -33,4 +35,84 @@
     display: flex;
     align-items: center;
     height: 100px;
+}
+
+
+/*grid container*/
+
+.grid-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 6px 6px; 
+    height: 85vh;
+    width: 95vw;
+    margin-top: 5rem;
+    grid-template-areas: 
+      "a a a b b"
+      "c c c b b"
+      "d d e e e"
+      "d d f f f"
+
+}
+
+.a{
+    background-image: url('/na-forest.jpg');
+    height: auto;
+    width: auto;
+    grid-area: a;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2%;
+}
+
+.b{
+    background-image: url('/sa-forest.jpg');
+    height: auto;
+    width: auto;
+    grid-area: b;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2%;
+
+}
+
+.c{
+    background-image: url('/eu.jpg');
+    border-radius: 2%;
+    height: auto;
+    width: auto;
+    grid-area: c;
+    background-position: center;
+    background-size: cover;
+}
+.d{
+    background-image: url('/fa-forest.jpg');
+    height: auto;
+    width: auto;
+    grid-area: d;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2%;
+}
+
+.e{
+    background-image: url('/as-forest.jpg');
+    height: auto;
+    width: auto;
+    grid-area: e;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2%;
+
+}
+
+.f{
+    background-image: url('/oc-forest.jpg');
+    border-radius: 2%;
+    height: auto;
+    width: auto;
+    grid-area: f;
+    background-position: center;
+    background-size: cover;
 }
