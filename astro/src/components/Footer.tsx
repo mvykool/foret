@@ -53,7 +53,7 @@ const Footer = () => {
             <li className='text-gray-400 text-xs'>Q/A</li>
             <li className='text-gray-400 text-xs'>Terms & conditions</li>
             <li className='text-gray-400 text-xs'>Privacy</li>
-            <li className='text-gray-400 text-xs'>Premium</li>
+            <li className='text-gray-400 text-xs'>Contact</li>
           </ul>
 
       <div className='py-1 flex justify-center'>

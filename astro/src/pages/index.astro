@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/layout.astro";
+import ScrollTop from "../components/ScrollTop";
 ---
 
 <script>
@@ -73,17 +74,17 @@ import Layout from "../layouts/layout.astro";
     <div class="grid-container mb-20">
 
 
- <div class="a ">
+ <div class="a hide">
  </div>
- <div class="b ">
+ <div class="b hide">
  </div>
- <div class="c ">
+ <div class="c hide">
  </div>
- <div class="d ">
+ <div class="d hide">
  </div>
- <div class="e ">
+ <div class="e hide">
  </div>
- <div class="f ">
+ <div class="f hide">
  </div>
 
 
@@ -91,6 +92,8 @@ import Layout from "../layouts/layout.astro";
     </div>
 
 </section>
+
+<ScrollTop client:load/>
 	
 </Layout>
 
