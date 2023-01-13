@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root{
-    --app-col: #021F0E;
+    --app-col: #001C20;
 }
 
 /*navbar bg*/
@@ -18,9 +18,14 @@
 
 .bg-hero{
     background-image: url('/bg.forest.jpg');
-    height: 70vh;
     width: 100vw;
     background-size: cover;
+}
+
+.hero-fade{
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), #001C20);
+    height: 15vh;
+
 }
 
 .hero{
