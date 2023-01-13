@@ -1,24 +1,18 @@
 ---
 import Layout from "../layouts/layout.astro";
-import {motion} from "framer-motion"
 
 
-/**framer motion variants */
 
-const sectionVariant = {
-    hidden : { opacity: 0},
-    show: { opacity: 1,
-    transition: { duration: 1, delay: 0.5}
-    }
-  }
 
 ---
 
 <Layout title='Forêt'>
 	<!-- background pic -->
+
 <main class="bg-hero h-[95vh] relative">
 
     <!--bg hero -->
+
     <div class="flex justify-center items-center pt-72 flex-col">
        <h1 class="text-white text-5xl font-bold border-b-2 border-[var(--app-second-col)]">Discover</h1>
 
@@ -58,7 +52,7 @@ const sectionVariant = {
 
     <!-- gird -->
 
-    <div class="grid-container">
+    <div class="grid-container mb-20">
 
 
  <div class="a ">
@@ -79,6 +73,7 @@ const sectionVariant = {
     </div>
 
 </section>
+
 
 	
 </Layout>
