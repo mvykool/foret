@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root{
-    --app-col: #001C20;
+    --app-col: #000509;
 }
 
 /*navbar bg*/
@@ -23,7 +23,7 @@
 }
 
 .hero-fade{
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0), #001C20);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), #000509);
     height: 15vh;
 
 }
