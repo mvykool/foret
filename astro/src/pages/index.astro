@@ -1,25 +1,36 @@
 ---
 import Layout from "../layouts/layout.astro";
-
-
-
-
 ---
+
+<script>
+   const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+     if(entry.isIntersecting) {
+        entry.target.classList.add('show');
+     }else {
+        entry.target.classList.remove('show');
+     }
+  });
+ });
+
+ const hiddenElements = document.querySelectorAll('.hide');
+ hiddenElements.forEach((item) => observer.observe(item));
+</script>
+
 
 <Layout title='Forêt'>
 	<!-- background pic -->
 
-<main class="bg-hero h-[95vh] relative">
+<main class="bg-hero h-[95vh] relative flex justify-center items-center pt-10 flex-col">
 
     <!--bg hero -->
 
-    <div class="flex justify-center items-center pt-72 flex-col">
-       <h1 class="text-white text-5xl font-bold border-b-2 border-[var(--app-second-col)]">Discover</h1>
+    <div class="hide">
+      <h1 class="text-white text-5xl font-bold border-b-2 border-[var(--app-second-col)]">Discover</h1>
 
-       <p class="text-center text-white hero mt-8 w-44">The most beautiful forests around the globe.</p>
+      <p class="text-center text-white hero mt-8 w-44">The most beautiful forests around the globe.</p>
     </div>
-     <div class="hero-fade absolute bottom-0 text-white w-full">
-     </div>
+  
 
  </main>
 
@@ -27,8 +38,13 @@ import Layout from "../layouts/layout.astro";
 
 
  <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
-   <h2 class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)]">About us</h2>
+   
 
+
+      <h2 class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">About us</h2>
+
+
+ 
  
       <p class="text-white text-sm text-center mx-16 mt-16">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi distinctio praesentium, sint officiis voluptates. Illum, dolorum. Eos, cum aliquid?</p>
 
@@ -73,7 +89,7 @@ import Layout from "../layouts/layout.astro";
     </div>
 
 </section>
-
-
 	
 </Layout>
+
+

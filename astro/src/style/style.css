@@ -117,3 +117,14 @@
     background-size: cover;
 }
 
+
+.hide{
+    opacity: 0;
+    transition: all 3s;
+    filter: blur(2px);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
