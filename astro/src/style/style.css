@@ -14,6 +14,14 @@
 }
 
 
+/*hero*/
+
+.bg-hero{
+    background-image: url('/bg.forest.jpg');
+    height: 70vh;
+    width: 100vw;
+    background-size: cover;
+}
 
 .hero{
     background-image: radial-gradient(closest-side,rgb(0,26,17)  , rgba(255,255,255,0));
