@@ -29,8 +29,10 @@ import Layout from "../layouts/layout.astro";
       <h1 class="text-white text-5xl font-bold border-b-2 border-[var(--app-second-col)]">Discover</h1>
 
       <p class="text-center text-white hero mt-8 w-44">The most beautiful forests around the globe.</p>
+      
     </div>
-  
+    <div class='hero-fade absolute bottom-0 w-full'>
+   </div>
 
  </main>
 
@@ -46,17 +48,17 @@ import Layout from "../layouts/layout.astro";
 
  
  
-      <p class="text-white text-sm text-center mx-16 mt-16">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi distinctio praesentium, sint officiis voluptates. Illum, dolorum. Eos, cum aliquid?</p>
+      <p class="text-white text-sm text-center mx-16 mt-16 hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi distinctio praesentium, sint officiis voluptates. Illum, dolorum. Eos, cum aliquid?</p>
 
    <!-- image of about us -->
   
-   <img src="/black-forest.jpg" alt="black-forest" class="w-[95vw] mt-10 rounded-md">
+   <img src="/black-forest.jpg" alt="black-forest" class="w-[95vw] hide mt-10 rounded-md">
 
    <small class="text-gray-700 text-xs mt-2">[Black forest - Germany]</small>
 
-   <p class="text-white text-sm text-center mx-16 mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis quo dolores id magni vitae rerum ab cum quis adipisci provident atque earum amet odit vero dolore alias, debitis tempora harum explicabo temporibus labore. Provident possimus facilis, iusto debitis tempore voluptas, reiciendis qui saepe doloribus, cupiditate quasi rem. Reprehenderit.</p>
+   <p class="text-white text-sm hide text-center mx-16 mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis quo dolores id magni vitae rerum ab cum quis adipisci provident atque earum amet odit vero dolore alias, debitis tempora harum explicabo temporibus labore. Provident possimus facilis, iusto debitis tempore voluptas, reiciendis qui saepe doloribus, cupiditate quasi rem. Reprehenderit.</p>
 
-   <img src="/redwood.jpg" alt="red wood" class="w-[95vw] mt-10 rounded-md">
+   <img src="/redwood.jpg" alt="red wood" class="w-[95vw] hide mt-10 rounded-md">
 
    <small class="text-gray-700 text-xs mt-2">[Redwood National park - USA]</small>
 
@@ -64,7 +66,7 @@ import Layout from "../layouts/layout.astro";
  
 
 <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
-   <h2 class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)]">Explore</h2>
+   <h2 class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Explore</h2>
 
     <!-- gird -->
 
