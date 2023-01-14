@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiArrowRightSLine } from 'react-icons/ri'
+import { RiArrowLeftSLine } from 'react-icons/ri'
 
 const Goback = () => {
 
@@ -12,9 +12,9 @@ const Goback = () => {
   return (
     <div>
     <button>
-        <RiArrowRightSLine
+        <RiArrowLeftSLine
          onClick={backButton}
-         className='bg-[var(--app-second-col)] text-white h-12 w-12 border-2 border-white rounded-full -ml-10' />
+         className='bg-[var(--app-second-col)] text-white h-12 w-12  p-2 border-2 border-white rounded-full -ml-10' />
     </button>
     </div>
   )
