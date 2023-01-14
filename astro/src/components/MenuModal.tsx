@@ -23,7 +23,7 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
 
   return (
     <>
-    <div className='fixed w-full bg-[var(--bg-wrapper)] z-50 top-0 left-0 h-screen ' onClick={()=> setOpenMenu(false)}/> 
+    <div className='fixed w-full bg-[var(--bg-wrapper)] z-[100] top-0 left-0 h-screen ' onClick={()=> setOpenMenu(false)}/> 
      
 
     

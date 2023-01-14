@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {RiMenu5Fill} from 'react-icons/ri'
 import MenuModal from './MenuModal'
 
+
 const MenuMobile = () => {
 
 
@@ -14,7 +15,7 @@ if (typeof window !== "undefined") {
   let body = window.document.body;
 
  if(openMenu === true){
-  body.style.position = 'fixed'
+  body.style.position = 'absolute'
   body.style.overflow = 'hidden'
 }else {
   body.style.position = 'relative'
@@ -30,6 +31,7 @@ if (typeof window !== "undefined") {
         className='text-white border-2 border-[var(--app-second-col)]  text-xl w-10 h-10  p-1 rounded-lg'/>
 
         {openMenu && <MenuModal openMenu={openMenu} setOpenMenu={setOpenMenu} />}  
+
     </div>
   )
 }

@@ -145,13 +145,13 @@ html,body{
 /*back to top btn*/
 
 .top-to-btm{
-    position: relative;
+    position: absolute;
   }
   .icon-position{
     position: fixed;
     bottom: 40px;
     right: 25px;
-    z-index: 20;
+    z-index: 1;
   }
   .icon-style{
     background-color: var(--app-second-col);
