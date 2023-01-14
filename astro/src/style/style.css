@@ -169,4 +169,14 @@ body{
     color: var(--app-second-col);
     border: 2px solid var(--app-second-col);
   }
-  @k
+  
+
+  /*contact form*/
+
+  .contact{
+    background-image: url('/contact.jpg');
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    width: 100vw;
+  }
