@@ -8,12 +8,14 @@ import Goback from "../components/Goback";
    entries.forEach((entry) => {
       if(entry.isIntersecting) {
          entry.target.classList.add('show');
+         
       }
    });
   });
  
   const hiddenElements = document.querySelectorAll('.hide');
   hiddenElements.forEach((item) => observer.observe(item));
+
 
   //loading
 
