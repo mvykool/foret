@@ -14,10 +14,29 @@ import ScrollTop from "../components/ScrollTop";
 
  const hiddenElements = document.querySelectorAll('.hide');
  hiddenElements.forEach((item) => observer.observe(item));
+
+
+//loading
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader") as HTMLElement;
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+
 </script>
 
 
 <Layout title='Forêt'>
+
+<!--loader -->
+
+<div class="loader"></div>
+
 	<!-- background pic -->
 
 <main class="bg-hero h-[95vh] relative flex justify-center items-center pt-10 flex-col">

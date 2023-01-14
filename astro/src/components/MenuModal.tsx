@@ -58,7 +58,7 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
       
 
 
-       <a href={'#explore'} onClick={() => setOpenMenu(false)}>
+       <a href={'/#explore'} onClick={() => setOpenMenu(false)}>
          <div className='flex items-center space-x-2'>
            <RiEarthLine className='text-xl text-[var(--app-second-col)]'/>
            <button className='text-xl   font-semibold text-[var(--app-second-col)]'>Explore</button>

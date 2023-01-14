@@ -15,10 +15,25 @@ import Goback from "../components/Goback";
   const hiddenElements = document.querySelectorAll('.hide');
   hiddenElements.forEach((item) => observer.observe(item));
 
+  //loading
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader") as HTMLElement;
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
 
  </script>
 
 <Layout title='Forêt | contact us'>
+
+    <!--loader -->
+
+<div class="loader"></div>
     
     <main class="contact h-[50vh] relative flex  items-center flex-col">
         <div class="hide pt-28">
