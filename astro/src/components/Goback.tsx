@@ -4,9 +4,9 @@ import { RiArrowLeftSLine } from 'react-icons/ri'
 const Goback = () => {
 
     function backButton() {
-
-        window.history.back();
      
+        window.history.back();
+        window.scrollTo(0, 0);
         
         }
 

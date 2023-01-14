@@ -24,7 +24,9 @@ loader.classList.add("loader-hidden");
 
 loader.addEventListener("transitionend", () => {
   if(loader){
+    window.scrollTo(0, 0);
     document.body.removeChild(loader);
+  
 }
 });
 });
