@@ -1,35 +1,32 @@
 ---
 import Layout from "../layouts/layout.astro";
 import ScrollTop from "../components/ScrollTop";
-
 ---
 
 <script>
-   const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-     if(entry.isIntersecting) {
-        entry.target.classList.add('show');
-     }
-  });
+  const observer = new IntersectionObserver((entries) => {
+ entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+       entry.target.classList.add('show');
+    }
  });
+});
 
- const hiddenElements = document.querySelectorAll('.hide');
- hiddenElements.forEach((item) => observer.observe(item));
-
+const hiddenElements = document.querySelectorAll('.hide');
+hiddenElements.forEach((item) => observer.observe(item));
 
 //loading
 
 window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader") as HTMLElement;
-  loader.classList.add("loader-hidden");
+const loader = document.querySelector(".loader") as HTMLElement;
+loader.classList.add("loader-hidden");
 
-  loader.addEventListener("transitionend", () => {
+loader.addEventListener("transitionend", () => {
+  if(loader){
     document.body.removeChild(loader);
-  });
+}
 });
-
-
-
+});
 
 
 </script>
