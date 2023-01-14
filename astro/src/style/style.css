@@ -6,6 +6,7 @@
 :root{
     --app-col: #000509;
     --app-second-col:#00E474;
+    --bg-wrapper: rgba(0,0,0, 0.5);
 }
 
 /*navbar bg*/
@@ -115,6 +116,11 @@
     grid-area: f;
     background-position: center;
     background-size: cover;
+}
+
+.wrapper{
+    background-color: var(--bg-wrapper);
+   
 }
 
 /*animate*/
