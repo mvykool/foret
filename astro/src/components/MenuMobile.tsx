@@ -5,7 +5,7 @@ import MenuModal from './MenuModal'
 const MenuMobile = () => {
 
 
-  const [openMenu, setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState(true)
 
   //lock scrolling when modals are opened 
 
