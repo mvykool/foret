@@ -51,7 +51,7 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
          </div>
        </a>
 
-       <a href={'#about'} onClick={() => setOpenMenu(false)} className='flex  items-center space-x-2'> 
+       <a href={'/#about'} onClick={() => setOpenMenu(false)} className='flex  items-center space-x-2'> 
          <RiMapPinLine className='text-xl text-[var(--app-second-col)]' />
          <button className='text-xl  font-semibold text-[var(--app-second-col)]'> About us</button>
        </a>
