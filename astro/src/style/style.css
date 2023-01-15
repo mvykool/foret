@@ -238,7 +238,7 @@ footer{
   .grid-container-page{
     /* Grid layout*/
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr ; 
     grid-template-rows: 1fr 1fr 1fr 1fr; 
     position: relative;
     gap: 10px 10px; 
@@ -251,29 +251,86 @@ footer{
    "pc pd" 
    "pe pe";
 }
+
+@media (min-width: 768px) { 
+  .grid-container-page{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;  
+    position: relative;
+    gap: 10px 10px; 
+    height: 100vh;
+    width: 95vw;
+  grid-template-areas: 
+   "pa pb " 
+   "pa pb " 
+   "pc pd " 
+   "pc pd " 
+   "pe pe "
+   "pe pe "
+   "pe pe ";
+  }
+}
+
   .pa{
     grid-area: pa;
-
+    transition: all 1000ms;
   }
+ 
+
+.pa:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
+}
+
   .pb{
     grid-area: pb;
+    transition: all 1000ms;
  
   }
+
+  .pb:hover{
+    transition: all 1000ms;
+    transform: scale(0.9);
+    z-index: 100;
+  }
+  
 
   .pc{
     grid-area: pc;
+    transition: all 1000ms;
  
+  }
+
+  .pc:hover{
+    transition: all 1000ms;
+    transform: scale(0.9);
+    z-index: 100;
   }
 
   .pd{
     grid-area: pd;
+    transition: all 1000ms;
 
+  }
+
+  .pd:hover{
+    transition: all 1000ms;
+    transform: scale(0.9);
+    z-index: 100;
   }
 
 
   .pe{
     grid-area: pe;
+    transition: all 1000ms;
  
+  }
+  .pe:hover{
+    transition: all 1000ms;
+    transform: scale(0.9);
+    z-index: 100;
   }
 
 

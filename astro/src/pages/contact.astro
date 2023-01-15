@@ -41,53 +41,55 @@ window.addEventListener("load", () => {
 
 <div class="loader"></div>
     
-    <main class="contact h-[50vh] relative flex  items-center flex-col">
-        <div class="hide pt-28">
+<div class="flex md:flex-row flex-col">
+  <main class="contact h-[55vh] md:h-[100vh] relative flex  items-center flex-col">
+    <div class="hide pt-28">
 
-        <!--go back btn -->
-        <Goback client:load/>
+    <!--go back btn -->
+    <Goback client:load/>
+    
+    <!--title -->
+
+        <h1 class="text-white text-5xl mt-16 md:mt-40 font-bold border-b-2 border-[var(--app-second-col)]">Contact us</h1>
         
-        <!--title -->
-
-            <h1 class="text-white text-5xl mt-20 font-bold border-b-2 border-[var(--app-second-col)]">Contact us</h1>
-            
-          </div>
-          <div class='hero-fade absolute bottom-0 w-full'>
-         </div>
-  
-
-    </main>
+      </div>
+      <div class='hero-fade absolute bottom-0 w-full'>
+     </div>
 
 
-    <!--secition form -->
+</main>
 
-  <section class="bg-[var(--app-col)] p-10">
-    <form  class='flex flex-col justify-center p-3 md:w-[35vw] hide'>
-        <label class='bg-black w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Name</label>
-        <input
-        type="text"
-        name='name'
-        id='name'
-        placeholder='Your Name'
-        class='p-2 rounded-md outline-none'/>
-        <label class='bg-black w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Email</label>
-        <input
-        type="text"
-       
-        name='email'
-        id='email'
-        placeholder='Email Address'
-        class='p-2 rounded-md outline-none'/>
-        <label class='bg-black w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Message</label>
-        <input
-        type="text"
-        name='message'
-        id='message'
-        placeholder='Message' 
-        class='px-2 pt-2 pb-36 rounded-md outline-none'/>
-        <button class='my-5 rounded-md cursor-pointer bg-[var(--app-second-col)] text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
-  </form>
-  </section>
+
+<!--secition form -->
+
+<section class="bg-[var(--app-col)] p-10 flex justify-center md:w-[70vw] md:mx-auto">
+<form  class='md:absolute relative md:top-20 flex flex-col justify-center p-3 md:w-[35vw] hide'>
+    <label class='bg-black w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Name</label>
+    <input
+    type="text"
+    name='name'
+    id='name'
+    placeholder='Your Name'
+    class='p-2 rounded-md outline-none'/>
+    <label class='bg-black w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Email</label>
+    <input
+    type="text"
+   
+    name='email'
+    id='email'
+    placeholder='Email Address'
+    class='p-2 rounded-md outline-none'/>
+    <label class='bg-black w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Message</label>
+    <input
+    type="text"
+    name='message'
+    id='message'
+    placeholder='Message' 
+    class='px-2 pt-2 pb-36 rounded-md outline-none'/>
+    <button class='my-5 rounded-md cursor-pointer bg-[var(--app-second-col)] text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
+</form>
+</section>
+</div>
 
  
 </Layout>

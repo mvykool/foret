@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
 
 <div class="loader"></div>
     
-    <main class="eu h-[50vh] relative flex  items-center flex-col">
+    <main class="eu h-[50vh] md:h-[90vh] relative flex  items-center flex-col">
         <div class="hide pt-28">
 
         <!--go back btn -->
@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
         
         <!--title -->
 
-            <h1 class="text-white mx-16 text-4xl mt-16 font-bold hero">Europe</h1>
+            <h1 class="text-white mx-16 md:px-64 text-4xl mt-16 font-bold hero">Europe</h1>
             
           </div>
           <div class='hero-fade absolute bottom-0 w-full'>
@@ -62,16 +62,25 @@ window.addEventListener("load", () => {
 
     <!--secition form -->
 
-  <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
+    <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center md:w-[60vw] md:mx-auto">
 
-    <h2 id="about" class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Info 🌎</h2>
- 
-    <p class="text-white text-sm text-center mx-12 mt-10 hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sequi ea quisquam sit aliquid culpa deleniti, doloribus tempora? Ut dolore sequi accusantium voluptates eos deleniti, laudantium distinctio sapiente nobis quis voluptatum nemo repudiandae fugiat officia repellendus ducimus cupiditate eveniet perferendis a explicabo ex. Repellat culpa quasi nemo rerum laboriosam ad.</p>
+      <div class="md:flex md:mt-20 ">
+        <div class="md:w-[60vw]">
+          <h2 id="about" class="text-white text-2xl mx-auto text-center w-40 mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Info 🌎</h2>
+         
+          <p class="text-white text-sm text-center mx-12 mt-10 hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sequi ea quisquam sit aliquid culpa deleniti, doloribus tempora? Ut dolore sequi accusantium voluptates eos deleniti, laudantium distinctio sapiente nobis quis voluptatum nemo repudiandae fugiat officia repellendus ducimus cupiditate eveniet perferendis a explicabo ex. Repellat culpa quasi nemo rerum laboriosam ad.
 
- <!-- image of about us -->
- <img src="/eu-1.jpg" alt="black-forest" class="w-[95vw] hide mt-10 rounded-md">
+          </p>
+        </div>
 
- <small class="text-gray-700 text-xs mt-2">Triglav National Park | Slovenia</small>
+<div class="flex flex-col justify-center">
+   <!-- image of about us -->
+ <img src="/eu-1.jpg" alt="black-forest" class="w-[95vw] mx-auto md:h-[40vh] object-cover hide mt-10 rounded-md">
+
+ <small class="text-gray-700 mx-auto text-xs mt-2">Triglav National Park | Slovenia</small>
+</div>
+ </div>
+
     
 
  <!--popular forests -->
@@ -80,7 +89,7 @@ window.addEventListener("load", () => {
 
    
 
- <div class="grid-container-page my-10 relative">
+ <div class="grid-container-page my-10 relative flex flex-col justify-center  md:mx-auto">
     <a href="# " class="pa relative">
      <!--   Sequoia National Park, California-->
      <p class="bg-[var(--bg-wrapper)] p-4 flex justify-center text-white w-full absolute">Hallerbos Forest 🇧🇪</p>
