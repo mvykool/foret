@@ -246,6 +246,14 @@ html,body{
     width: 100vw;
   }
 
+  .eu{
+    background-image: url('/eu.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    width: 100vw;
+  }
+
   /*loader*/
 
   .loader{
