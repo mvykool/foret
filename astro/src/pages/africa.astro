@@ -1,0 +1,117 @@
+---
+import Layout from "../layouts/layout.astro"
+import Goback from "../components/Goback";
+import ScrollTop from "../components/ScrollTop";
+---
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+         entry.target.classList.add('show');
+         
+      }
+   });
+  });
+ 
+  const hiddenElements = document.querySelectorAll('.hide');
+  hiddenElements.forEach((item) => observer.observe(item));
+
+
+  //loading
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader") as HTMLElement;
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    if(loader){
+  
+    document.body.removeChild(loader);
+   
+}
+  });
+});
+
+
+ </script>
+
+<Layout title='Forêt | Africa'>
+
+    <!--loader -->
+
+<div class="loader"></div>
+    
+    <main class="af h-[50vh] relative flex  items-center flex-col">
+        <div class="hide pt-28">
+
+        <!--go back btn -->
+        <Goback client:load/>
+        
+        <!--title -->
+
+            <h1 class="text-white mx-16 text-4xl mt-16 font-bold hero">Africa</h1>
+            
+          </div>
+          <div class='hero-fade absolute bottom-0 w-full'>
+         </div>
+  
+
+    </main>
+
+
+    <!--secition form -->
+
+  <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
+
+    <h2 id="about" class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Info 🌎</h2>
+ 
+    <p class="text-white text-sm text-center mx-12 mt-10 hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sequi ea quisquam sit aliquid culpa deleniti, doloribus tempora? Ut dolore sequi accusantium voluptates eos deleniti, laudantium distinctio sapiente nobis quis voluptatum nemo repudiandae fugiat officia repellendus ducimus cupiditate eveniet perferendis a explicabo ex. Repellat culpa quasi nemo rerum laboriosam ad.</p>
+
+ <!-- image of about us -->
+ <img src="/af-1.jpg" alt="black-forest" class="w-[95vw] hide mt-10 rounded-md">
+
+ <small class="text-gray-700 text-xs mt-2">Mau Forest | Kenia</small>
+    
+
+ <!--popular forests -->
+ 
+ <h2 id="about" class="text-white text-2xl mt-16 font-bold border-b-2 border-[var(--app-second-col)] hide">Popular Forests</h2>
+
+   
+
+ <div class="grid-container-page my-10 relative">
+    <a href="# " class="pa relative">
+     <!--   Sequoia National Park, California-->
+     <p class="bg-[var(--bg-wrapper)] p-4 flex justify-center text-white w-full absolute">Congo basin Forest 🇨🇩</p>
+        <img src="/af-pa.jpeg" alt="bosque argentina" class="rounded-lg object-cover h-full w-full">
+    </a>
+
+    <a href="# " class="pb relative">
+      <!--  Alberta’s Mountain Forests -->
+      <p class="bg-[var(--bg-wrapper)] p-4 flex justify-center text-white w-full absolute">Kilimanjaro Rainforest 🇹🇿</p>
+        <img src="/af-pb.jpg" alt="bosque argentina" class="rounded-lg object-cover h-full w-full">
+    </a>
+
+    <a href="# " class="pc relative ">
+       <!-- douglas-fir forests-->
+       <p class="bg-[var(--bg-wrapper)] p-4 flex justify-center text-white w-full absolute">Ebo Rainforest 🇨🇲</p>
+        <img src="/af-pc.png" alt="bosque argentina" class="rounded-lg object-cover h-full w-full">
+    </a>
+
+    <a href="# " class="pd relative">
+      <!--   Mercantour National Park-->
+      <p class="bg-[var(--bg-wrapper)] p-4 flex justify-center text-white w-full absolute">Ngwo Pine forest 🇳🇬</p>
+        <img src="/af-pd.jpg" alt="bosque argentina" class="rounded-lg object-cover h-full w-full"></a>
+
+    <a href="# " class="pe relative">
+    <!--   lake blausee -->
+         <p class="bg-[var(--bg-wrapper)] p-2 flex justify-center text-white w-full absolute">Baobab Forest 🇲🇬</p>
+        <img src="/af-pe.jpg" alt="bosque argentina" class="rounded-lg object-cover h-full w-full"></a>
+ </div>
+
+
+  </section>
+  <ScrollTop client:load/>
+ 
+</Layout>

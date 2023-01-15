@@ -254,6 +254,14 @@ html,body{
     width: 100vw;
   }
 
+  .af{
+    background-image: url('/fa-forest.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    width: 100vw;
+  }
+
   /*loader*/
 
   .loader{
