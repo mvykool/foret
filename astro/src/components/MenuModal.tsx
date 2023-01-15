@@ -72,14 +72,6 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
        </a>
 
 
-
-       <a href={'/blog/posts'} onClick={() => setOpenMenu(false)}>
-         <div className='flex  items-center space-x-2'>
-           <RiFileList2Line className='text-xl text-[var(--app-second-col)]'/>
-           <button className='text-xl  font-semibold text-[var(--app-second-col)]'>Blog</button>
-         </div>
-       </a>
-
        </div>
 
        {/**footer */}

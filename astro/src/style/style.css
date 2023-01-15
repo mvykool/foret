@@ -262,6 +262,14 @@ html,body{
     width: 100vw;
   }
 
+  .as{
+    background-image: url('/as-forest.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    width: 100vw;
+  }
+
   /*loader*/
 
   .loader{
