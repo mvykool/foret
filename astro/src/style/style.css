@@ -73,7 +73,8 @@ html,body{
 }
 
 .b{
-    background-image: url('/sa-forest.jpg');
+    background-image: url('/eu.jpg');
+
     height: auto;
     width: auto;
     grid-area: b;
@@ -84,7 +85,7 @@ html,body{
 }
 
 .c{
-    background-image: url('/eu.jpg');
+    background-image: url('/sa-forest.jpg');
     border-radius: 2%;
     height: auto;
     width: auto;
