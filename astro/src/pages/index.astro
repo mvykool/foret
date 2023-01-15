@@ -43,7 +43,7 @@ loader.addEventListener("transitionend", () => {
 
 	<!-- background pic -->
 
-<main class="bg-hero h-[95vh] relative flex justify-center items-center pt-10 flex-col">
+<main class="bg-hero h-[95vh] md:h-[115vh] md:pb-40 overflow-x-hidden w-screen relative flex justify-center items-center pt-10 flex-col">
 
     <!--bg hero -->
 
@@ -61,42 +61,56 @@ loader.addEventListener("transitionend", () => {
  <!--body sections -->
 
 
- <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
+ <section 
+ class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center md:w-[60vw] md:mx-auto">
    
 
+<div class="md:flex md:mt-20 md:mr-10 ">
 
-      <h2 id="about" class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">About us</h2>
+ <div class="md:w-[60vw]">
+  <h2 id="about" class="text-white text-2xl mx-auto text-center w-40 mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">About us</h2>
 
 
  
  
-      <p class="text-white text-sm text-center mx-16 mt-16 hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi distinctio praesentium, sint officiis voluptates. Illum, dolorum. Eos, cum aliquid?</p>
+  <p class="text-white text-sm text-center mx-16 mt-16 hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi distinctio praesentium, sint officiis voluptates. Illum, dolorum. Eos, cum aliquid. ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi distinctio praesentium, sint officiis voluptates. Illum, dolorum. Eos, cum aliquid</p>
 
-   <!-- image of about us -->
-  
-   <img src="/black-forest.jpg" alt="black-forest" class="w-[95vw] hide mt-10 rounded-md">
+ </div>
+<!-- image of about us -->
+<div class="flex flex-col justify-center">
 
-   <small class="text-gray-700 text-xs mt-2">[Black forest - Germany]</small>
+<img src="/black-forest.jpg" alt="black-forest" class="w-[95vw] mx-auto md:h-[40vh] object-cover hide mt-10 rounded-md">
 
-   <p class="text-white text-sm hide text-center mx-16 mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis quo dolores id magni vitae rerum ab cum quis adipisci provident atque earum amet odit vero dolore alias, debitis tempora harum explicabo temporibus labore. Provident possimus facilis, iusto debitis tempore voluptas, reiciendis qui saepe doloribus, cupiditate quasi rem. Reprehenderit.</p>
+<small class="text-gray-700 mx-auto text-xs mt-2">[Black forest - Germany]</small>
+</div>
+</div>
 
-   <img src="/redwood.jpg" alt="red wood" class="w-[95vw] hide mt-10 rounded-md">
 
-   <small class="text-gray-700 text-xs mt-2">[Redwood National park - USA]</small>
+<div class="md:flex md:mt-20 md:mr-10 md:flex-row-reverse">
+  <p class="text-white text-sm hide text-center mx-16 mt-16 md:w-[50vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis quo dolores id magni vitae rerum ab cum quis adipisci provident atque earum amet odit vero dolore alias, debitis tempora harum explicabo temporibus labore. Provident possimus facilis, iusto debitis tempore voluptas, reiciendis qui saepe doloribus, cupiditate quasi rem. Reprehenderit.</p>
 
+ <div class="flex flex-col justify-center">
+  <img src="/redwood.jpg" alt="red wood" class="w-[95vw] hide mt-10 rounded-md mx-auto">
+
+  <small class="text-gray-700 mx-auto text-xs mt-2">[Redwood National park - USA]</small>
+ </div>
+
+</div>
+
+ 
 </section>
  
 
-<section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
+<section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center  md:w-[60vw] md:mx-auto">
    <h2 id="explore" class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Discover</h2>
 
     <!-- gird -->
 
-    <div class="grid-container mb-20">
+    <div class="grid-container mb-20  md:w-[60vw] md:mx-auto">
 
 
  <div class="a hide">
-   <a href="/north-america" class="w-full z-10 absolute wrapper text-lg text-white flex justify-center h-full items-center p-4">North America</a>
+   <a href="/north-america" class="w-full z-10 absolute wrapper text-lg text-white flex justify-center h-full items-center p-4 ">North America</a>
  </div>
 
  <div class="c hide">

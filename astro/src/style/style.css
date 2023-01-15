@@ -12,6 +12,11 @@
 html,body{
     scroll-behavior: smooth;
     background-color: #000509;
+    overflow-x: hidden !important;
+}
+
+footer{
+  overflow-x: hidden !important;
 }
 
 /*navbar bg*/
@@ -28,6 +33,7 @@ html,body{
     background-image: url('/bg.forest.jpg');
     width: 100vw;
     background-size: cover;
+
 }
 
 .hero-fade{
@@ -69,7 +75,14 @@ html,body{
     grid-area: a;
     background-position: center;
     background-size: cover;
-    border-radius: 2%;
+    border-radius:5px;
+    transition: all 1000ms;
+}
+
+.a:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
 }
 
 .b{
@@ -84,15 +97,29 @@ html,body{
 
 }
 
+.b:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
+}
+
 .c{
     background-image: url('/sa-forest.jpg');
-    border-radius: 2%;
+    border-radius:5px;
     height: auto;
     width: auto;
     grid-area: c;
     background-position: center;
     background-size: cover;
 }
+
+.c:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
+}
+
+
 .d{
     background-image: url('/fa-forest.jpg');
     height: auto;
@@ -103,6 +130,13 @@ html,body{
     border-radius: 2%;
 }
 
+.d:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
+}
+
+
 .e{
     background-image: url('/as-forest.jpg');
     height: auto;
@@ -110,19 +144,34 @@ html,body{
     grid-area: e;
     background-position: center;
     background-size: cover;
-    border-radius: 2%;
+    border-radius:5px;
 
 }
 
+.e:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
+}
+
+
 .f{
     background-image: url('/oc-forest.jpg');
-    border-radius: 2%;
+    border-radius:5px;
     height: auto;
     width: auto;
     grid-area: f;
     background-position: center;
     background-size: cover;
 }
+
+.f:hover{
+  transition: all 1000ms;
+  transform: scale(0.9);
+  z-index: 100;
+}
+
+
 
 .wrapper{
     background-color: var(--bg-wrapper);
@@ -134,7 +183,7 @@ html,body{
 
 .hide{
     opacity: 0;
-    transition: all 3s;
+    transition: all 2s;
     filter: blur(2px);
 }
 

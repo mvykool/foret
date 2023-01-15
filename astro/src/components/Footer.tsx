@@ -4,26 +4,26 @@ import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare} from 'react-
 
 const Footer = () => {
   return (
-    <footer className='bg-black w-screen border-t-2 border-[var(--app-second-col)]'>
+    <footer className='bg-black overflow-x-hidden w-screen border-t-2 border-[var(--app-second-col)]'>
       <div className='flex justify-around pb-4'>
         
         {/**logo with text */}
 
         <div className='  mt-5'>
            <div className='w-20'>
-           <h1 className='text-[var(--app-second-col)] text-lg p-1 flex justify-center rounded-md '>Forêt
+           <h1 className='text-[var(--app-second-col)] text-lg p-1 flex justify-center rounded-md md:text-2xl'>Forêt
            </h1>
            </div>
           
-          <p className='text-white text-xs my-3 w-40'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className='text-white text-xs my-3 w-40 md:w-64 md:text-lg'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
            
             {/**social media */}
 
           <div className='flex items-center space-x-2'>
-             <FaFacebookSquare className='text-gray-400'/>
-             <FaTwitter className='text-gray-400'/>
-             <FaInstagramSquare className='text-gray-400'/>
-             <FaYoutube className='text-gray-400'/>
+             <FaFacebookSquare className='text-gray-400 md:h-8 md:w-8'/>
+             <FaTwitter className='text-gray-400 md:h-8 md:w-8'/>
+             <FaInstagramSquare className='text-gray-400 md:h-8 md:w-8'/>
+             <FaYoutube className='text-gray-400 md:h-8 md:w-8'/>
           </div>
 
          </div>
@@ -48,16 +48,16 @@ const Footer = () => {
 
       <hr  />
 
-      <div className='flex justify-around py-5'>
+      <div className='flex justify-around py-5 '>
           <ul className='flex space-x-4 px-4'>
-            <li className='text-gray-400 text-xs'>Q/A</li>
-            <li className='text-gray-400 text-xs'>Terms & conditions</li>
-            <li className='text-gray-400 text-xs'>Privacy</li>
-            <li className='text-gray-400 text-xs'>Contact</li>
+            <li className='text-gray-400 text-xs md:text-sm'>Q/A</li>
+            <li className='text-gray-400 text-xs md:text-sm'>Terms & conditions</li>
+            <li className='text-gray-400 text-xs md:text-sm'>Privacy</li>
+            <li className='text-gray-400 text-xs md:text-sm'>Contact</li>
           </ul>
 
       <div className='py-1 flex justify-center'>
-           <p className='text-gray-300 text-xs'>&copy;Forêt | 2023</p>
+           <p className='text-gray-300 text-xs md:text-sm'>&copy;Forêt | 2023</p>
       </div> 
       </div>
         
