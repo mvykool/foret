@@ -183,6 +183,61 @@ html,body{
     width: 100vw;
   }
 
+
+  /*south america. north america, europe, australia, asia and africa*/
+  
+  .grid-container-page{
+    /* Grid layout*/
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    position: relative;
+    gap: 10px 10px; 
+    height: 90vh;
+    width: 95vw;
+  grid-template-areas: 
+   "pa pb" 
+   "pa pb" 
+   "pc pd" 
+   "pc pd" 
+   "pe pe";
+}
+  .pa{
+    grid-area: pa;
+
+  }
+  .pb{
+    grid-area: pb;
+ 
+  }
+
+  .pc{
+    grid-area: pc;
+ 
+  }
+
+  .pd{
+    grid-area: pd;
+
+  }
+
+
+  .pe{
+    grid-area: pe;
+ 
+  }
+
+
+
+
+  .sa{
+    background-image: url('/sa-forest.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    width: 100vw;
+  }
+
   /*loader*/
 
   .loader{
