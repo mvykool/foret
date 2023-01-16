@@ -15,7 +15,7 @@ const Goback = () => {
     <button>
         <RiArrowLeftSLine
          onClick={backButton}
-         className='bg-[var(--app-second-col)] text-white h-12 w-12  p-2 border-2 border-white rounded-full -ml-10  hover:scale-110 duration-100 cursor-pointer' />
+         className='bg-[var(--app-second-col)] text-white h-12 w-12  p-2 border-2 border-white rounded-full absolute left-4 hover:scale-110 duration-100 cursor-pointer' />
     </button>
     </div>
   )

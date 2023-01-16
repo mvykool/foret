@@ -28,7 +28,10 @@ const Footer = () => {
 
          </div>
       
-
+         <div  className="hidden md:flex items-center space-x-2">
+         <img src="/logo.png" className="h-8" alt="logo"/>
+        <p className="text-white text-xl"> Forêt</p>
+        </div>
       
 
         {/**newsletter */}
