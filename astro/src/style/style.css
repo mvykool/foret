@@ -410,6 +410,14 @@ footer{
     width: 100vw;
   }
 
+  .oc{
+    background-image: url('/oc-forest.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    width: 100vw;
+  }
+
   /*loader*/
 
   .loader{
