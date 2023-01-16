@@ -14,13 +14,14 @@ const MenuMobile = () => {
 if (typeof window !== "undefined") {
   let body = window.document.body;
 
- if(openMenu === true){
-  body.style.position = 'absolute'
-  body.style.overflow = 'hidden'
-}else {
-  body.style.position = 'relative'
-  body.style.overflow = 'auto'
+  if (openMenu === true) {
+    body.classList.add("overflowHidden");
+    body.classList.add("overflowHidden")
+} else if (openMenu === false) {
+   body.classList.remove("overflowHidden");
+   body.classList.remove("overflowHidden");
 }
+
 }
 
 
