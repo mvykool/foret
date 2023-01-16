@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
 
 <div class="loader"></div>
     
-    <main class="as h-[50vh] relative flex  items-center flex-col">
+    <main class="as h-[50vh] md:hidden relative flex  items-center flex-col">
         <div class="hide pt-28">
 
         <!--go back btn -->
@@ -59,19 +59,47 @@ window.addEventListener("load", () => {
 
     </main>
 
-
-    <!--secition form -->
-
-  <section class="bg-[var(--app-col)] py-20 flex flex-col justify-center items-center">
-
-    <h2 id="about" class="text-white text-2xl mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Info 🌎</h2>
+     
+  <!--desktop view -->
+  <main class="hidden relative md:flex justify-center pt-28 w-[85vw] mx-auto">
+  
+    <!--go back btn -->
+  <Goback client:load/>
  
-    <p class="text-white text-sm text-center mx-12 mt-10 hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sequi ea quisquam sit aliquid culpa deleniti, doloribus tempora? Ut dolore sequi accusantium voluptates eos deleniti, laudantium distinctio sapiente nobis quis voluptatum nemo repudiandae fugiat officia repellendus ducimus cupiditate eveniet perferendis a explicabo ex. Repellat culpa quasi nemo rerum laboriosam ad.</p>
+  <div class="hide mx-auto">
+  <!--title -->
 
- <!-- image of about us -->
- <img src="/as-1.png" alt="black-forest" class="w-[95vw] hide mt-10 rounded-md">
+      <h1 class="text-white text-4xl mt-16 font-bold w-[20vw] mx-auto border-b-2 border-[var(--app-second-col)]  text-center">Asia</h1>
 
- <small class="text-gray-700 text-xs mt-2">xinjiang tianshan forest | China</small>
+      <img src="/as-bg.jpg" alt="north america" class="w-[100vw] object-cover h-[60vh]  hide mt-10 rounded-md">
+      <div class='hero-fade absolute bottom-0 w-full'>
+      </div>
+   
+    </div>
+
+
+</main>
+
+
+  <!--secition form -->
+  <section class="bg-[var(--app-col)] py-20 flex flex-col relative justify-center items-center md:w-[60vw] md:mx-auto ">
+
+    <div class="md:flex md:mt-20 ">
+      <div>
+       <h2 id="about" class="text-white text-2xl mx-auto text-center w-36 mt-5 font-bold border-b-2 border-[var(--app-second-col)] hide">Info 🌎</h2>
+    
+       <p class="text-white text-sm text-center md:w-[20vw] mx-12 mt-10 hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sequi ea quisquam sit aliquid culpa deleniti, doloribus tempora? Ut dolore sequi accusantium voluptates eos deleniti, laudantium distinctio sapiente nobis quis voluptatum nemo repudiandae fugiat officia repellendus ducimus cupiditate eveniet perferendis a explicabo ex. Repellat culpa quasi nemo rerum laboriosam ad.</p>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <!-- image of about us -->
+      <img src="/as-1.png" alt="black-forest" class="w-[100vw] relative mx-auto md:h-[40vh] object-cover hide mt-10 rounded-md">
+     
+ <small class="text-gray-700 mx-auto text-xs mt-2">[xinjiang tianshan forest | China]</small>
+</div>
+    
+   </div> 
+
     
 
  <!--popular forests -->
@@ -80,7 +108,7 @@ window.addEventListener("load", () => {
 
    
 
- <div class="grid-container-page my-10 relative">
+ <div class="grid-container-page my-10 relative flex flex-col justify-center  md:mx-auto">
     <a href="# " class="pa relative">
      <!--   Sequoia National Park, California-->
      <p class="bg-[var(--bg-wrapper)] p-4 flex justify-center text-white w-full absolute">Desert Poplar Forest 🇨🇳</p>
