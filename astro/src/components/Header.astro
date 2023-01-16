@@ -1,15 +1,40 @@
 ---
 import MenuMobile from "./MenuMobile";
+import {RiHome5Line, RiFileList2Line, RiMapPinLine, RiAccountPinBoxLine, RiArrowRightSLine, RiEarthLine} from 'react-icons/ri'
+
 ---
 
 <nav class="flex justify-between px-8 z- items-center py-4 border-b-[1px] border-[var(--app-second-col)] fixed top-0 w-screen z-[200] bg-nav">
     <div>
-        <p class="font-bold text-white">Forêt</p>
+        <p class="font-bold text-white md:text-xl">Forêt</p>
     </div>
 
-    <!-- menu mobile -->
+        <div class='hidden md:flex gap-5'>
+            <a href={`/`}  class="text-xl  font-semibold text-[var(--app-second-col)] hover:text-white hover:bg-[var(--app-second-col)] px-1 rounded-md duration-150">
+            Home
+            </a>
+     
+            <a href={'/#about'}  class='text-xl  font-semibold text-[var(--app-second-col)] hover:text-white hover:bg-[var(--app-second-col)] px-1 rounded-md duration-150'> 
+                About
+            </a>
+           
+     
+     
+            <a href={'/#explore'} class="text-xl  font-semibold text-[var(--app-second-col)] hover:text-white hover:bg-[var(--app-second-col)] px-1 rounded-md duration-150" >
+              Explore
+            </a>
+     
+           
+            <a href={'/contact'} class='text-xl  font-semibold text-[var(--app-second-col)] hover:text-white hover:bg-[var(--app-second-col)] px-1 rounded-md duration-150'> 
+            Contact us
+            </a>
+     </div>
    
+
+    <!-- menu mobile -->
+<div class="md:hidden">  
     <MenuMobile client:load/>
+</div>
 
 </nav>
 
