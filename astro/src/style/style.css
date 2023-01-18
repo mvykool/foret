@@ -44,7 +44,6 @@
 }
 
 html,body{
-    scroll-behavior: smooth !important;
     background-color: #000509;
     overflow-x: hidden !important;
 }
@@ -217,8 +216,8 @@ footer{
 
 .hide{
     opacity: 0;
-    transition: all 2s;
-    filter: blur(2px);
+    transition: all 1s;
+    filter: blur(1px);
 }
 
 .show{
