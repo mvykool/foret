@@ -34,8 +34,12 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
        animate='show'
         className=' bg-[var(--app-col)] scrollLock right-0 z-50 h-[100vh] top-0 w-60 fixed'>
         
-          <div className='p-3 bg-[var(--app-second-col)] h-24'>
+          <div className='p-3 bg-[var(--app-second-col)] h-24 justify-center'>
               
+          
+         <img src="/logo.png" className="h-8" alt="logo"/>
+        <p className="text-white text-xl"> Forêt</p>
+   
           
           </div>
 
