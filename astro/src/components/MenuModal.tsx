@@ -36,9 +36,7 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
         
           <div className='p-3 bg-[var(--app-second-col)] h-24'>
               
-           <div onClick={() => setOpenMenu(false)}>
-          <RiArrowRightSLine className='bg-[var(--app-second-col)] text-white h-14 w-14 rounded-full absolute ml-[-14%]' />
-           </div>
+          
           </div>
 
          
