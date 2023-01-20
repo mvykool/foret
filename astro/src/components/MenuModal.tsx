@@ -37,8 +37,8 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
           <div className='p-3 bg-[var(--app-second-col)] h-24 w-full flex justify-center space-x-3 items-center'>
               
           
-         <img src="/logo.png" className="h-8" alt="logo"/>
-        <p className="text-white text-xl"> Forêt</p>
+         <img src="/logo.png" className="h-10 w-10 border-2 border-black rounded-full" alt="logo"/>
+        <p className="text-black text-xl"> Forêt</p>
    
           
           </div>
