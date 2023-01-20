@@ -34,7 +34,7 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
        animate='show'
         className=' bg-[var(--app-col)] scrollLock right-0 z-50 h-[100vh] top-0 w-60 fixed'>
         
-          <div className='p-3 bg-[var(--app-second-col)] h-24 justify-center'>
+          <div className='p-3 bg-[var(--app-second-col)] h-24 w-full flex justify-center space-x-3 items-center'>
               
           
          <img src="/logo.png" className="h-8" alt="logo"/>
@@ -45,7 +45,7 @@ const MenuModal = ({openMenu, setOpenMenu}: Props) => {
 
          
             {/**menu  */}
-       <div className='flex flex-col ml-16 gap-5 mt-28'>
+       <div className='flex flex-col ml-16 gap-5 mt-20'>
        <a href={`/`} onClick={() => setOpenMenu(false)}>
          <div className='flex items-center space-x-2'>
           <RiHome5Line className='text-xl text-[var(--app-second-col)]'/>
